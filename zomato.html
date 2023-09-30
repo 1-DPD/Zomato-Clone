@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="Js/zomato.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="main_head">
+        <div class="logo_info1">
+            <!-- <h4>ZOMATO</h4> -->
+            <img src="Images/b40b97e677bc7b2ca77c58c61db266fe1603954218.avif" alt="">
+            
+        </div>
+        <div class="blank"></div>
+        <div class="searchbox">
+            <input type="text" placeholder="🔍Search City">
+        </div>
+        
+            
+
+            
+       
+        <div class="navbar" >
+            <div class="singin" >
+                <button id="myButton">Signup</button>
+                <div id="myPopup" class="popup">
+                    <div class="popup-content">
+                        <div class="close">
+                            <h1 style="color:rgb(133, 134, 133);">Signin</h1>
+                            <button id="closePopup">X</button>
+                        </div>
+                        
+                        <div class="input">
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email" attern=".+@globex\.com"  required>
+                            <div class="click">
+                                <button onclick="clickme()">Submit</button>
+                            </div> 
+                        </div>
+                        <div class="or"><p>-or-</p></div>
+                        
+                        <div class="with">Continue With Google</div>
+                        <p>Already have an account? <a href="#" class="signIn-link">Login</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="blank"></div>
+            <div class="singin">
+                <button id="myButton1">Login</button>
+                <div id="myPopup1" class="popup">
+                    <div class="popup-content">
+                        <div class="close">
+                            <h1 style="color:rgb(133, 134, 133);">Login</h1>
+                            <button id="closePopup1">X</button>
+                        </div>
+                        <div class="select">
+                            <select name="" id="">
+                                <option value="">India | +91</option>
+                                <option value="">USA   | +1 </option>  
+                             
+
+                            </select>
+                            <input type="number" maxlength="10" pattern="[1-9]{1}[9-0]{9}" required>
+                            <div class="click">
+                                <button onclick="clickme()">Submit</button>
+                            </div>
+
+                        </div>
+                        
+                        <div class="or"><p>-or-</p></div>
+                        <div class="with_cont">
+                            <div class="with">Continue With Email</div>
+                            <div class="with">Continue With Google</div>
+                        </div>
+                        <p>Create an account? <a href="#" class="signIn-link">Login</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="blank"></div>
+            
+
+        </div>
+        
+        <div class="nav">
+            
+            <!-- <img src="Images/zomato_blackbackground.jfif" alt=""> -->
+            
+        </div>
+        <div class="image_back"></div>
+        
+        
+        <div class="back_img">
+            <img src="Images/Toronto_Food_Photographer_Joanna_Wojewoda_Alchemy_Food_and_Drink-2.jpg" alt="">
+        </div>
+
+    </div>
+    <!-- <div class="nexthead">
+        <div class="delivery"><div class="delivery_img">🛵</div><h4>Delivery</h4></div>
+        <div class="delivery"><div class="delivery_img">🍽</div><h4>Dinning Out</h4></div>
+        <div class="delivery"><div class="delivery_img">🎶</div><h4>Nightlife</h4></div>        
+    </div> -->
+    
+    
+    <div class="circle">
+        <div class="inspire"><h1>Inspiration for your first order</h1></div>
+        <div class="img_inspire">
+             <ul>
+                <li><a href=""><img src="Images/paneer.jpg" alt=""></a></li>
+                <li><a href=""><img src="Images/momos.jpg" alt=""></a></li>
+                <li><a href=""><img src="Images/kanda_bhaje.jpg" alt=""></a></li>
+                <li><a href=""><img src="Images/manchurian.jpg" alt=""></a></li>
+                <li><a href=""><img src="Images/kulfi.jpg" alt=""></a></li>
+            </ul>
+        </div>
+       
+    </div>
+    <h1>Best Food in Aurangabad</h1>
+    <div class="body1">
+        <div class="gallery">
+            
+            <div class="content">
+                <a href="decoflow.html">
+                <img src="Images/dabeli.jpg" alt="watch">
+                <div class="resinfo">
+                    <div class="name">
+                        <h4>Sanskari Dhaba</h4>
+                        <div class="rating">3.9⭐</div>
+                    </div>
+                    <div class="dishAvailable">
+                        <div class="dish">Punjabi,Chinese</div>
+                        <div class="price">150.00 Rs for one</div>
+                    </div>
+                    <div class="distance">40min</div>
+                </div>
+                </a>
+            </div>
+            <div class="content">
+                <a href="decoflow.html">
+                <img src="Images/pizza.jpg" alt="watch">
+                <div class="resinfo">
+                    <div class="name">
+                        <h4>Dominos Pizza</h4>
+                        <div class="rating">4.5⭐</div>
+                    </div>
+                    <div class="dishAvailable">
+                        <div class="dish">Pizza,Cold drink</div>
+                        <div class="price">199.00 Rs for one</div>
+                    </div>
+                    <div class="distance">25min</div>
+                </div>
+                </a>
+            </div>
+            <div class="content">
+                <a href="decoflow.html">
+                <img src="Images/pavbhaji.jpg" alt="watch">
+                <div class="resinfo">
+                    <div class="name">
+                        <h4>Indian Meals</h4>
+                        <div class="rating">4.2⭐</div>
+                    </div>
+                    <div class="dishAvailable">
+                        <div class="dish">Punjabi,Maharastra</div>
+                        <div class="price">190.00 Rs for one</div>
+                    </div>
+                    <div class="distance">35min</div>
+                </div>
+                </a>
+            </div>
+            <div class="content">
+                <a href="decoflow.html">
+                <img src="Images/panipuri.jpg" alt="watch">
+                <div class="resinfo">
+                    <div class="name">
+                        <h4>Street Stay</h4>
+                        <div class="rating">3.8⭐</div>
+                    </div>
+                    <div class="dishAvailable">
+                        <div class="dish">Street Food Special</div>
+                        <div class="price">80.00 Rs for one</div>
+                    </div>
+                    <div class="distance">29min</div>
+                </div>
+                </a>
+            </div>
+            <div class="content">
+                <a href="decoflow.html">
+                <img src="Images/frise.jpg" alt="watch">
+                <div class="resinfo">
+                    <div class="name">
+                        <h4>Street Stay</h4>
+                        <div class="rating">3.8⭐</div>
+                    </div>
+                    <div class="dishAvailable">
+                        <div class="dish">Street Food Special</div>
+                        <div class="price">80.00 Rs for one</div>
+                    </div>
+                    <div class="distance">29min</div>
+                </div>
+                </a>
+            </div>
+            <div class="content">
+                <a href="decoflow.html">
+                <img src="Images/pasta.jpg" alt="watch">
+                <div class="resinfo">
+                    <div class="name">
+                        <h4>Street Stay</h4>
+                        <div class="rating">3.8⭐</div>
+                    </div>
+                    <div class="dishAvailable">
+                        <div class="dish">Street Food Special</div>
+                        <div class="price">80.00 Rs for one</div>
+                    </div>
+                    <div class="distance">29min</div>
+                </div>
+                </a>
+            </div>
+            <div class="content">
+                <a href="decoflow.html">
+                <img src="Images/chole_bhature.jpg" alt="watch">
+                <div class="resinfo">
+                    <div class="name">
+                        <h4>Street Stay</h4>
+                        <div class="rating">3.8⭐</div>
+                    </div>
+                    <div class="dishAvailable">
+                        <div class="dish">Street Food Special</div>
+                        <div class="price">80.00 Rs for one</div>
+                    </div>
+                    <div class="distance">29min</div>
+                </div>
+                </a>
+            </div>
+            <div class="content">
+                <a href="decoflow.html">
+                <img src="Images/dhokla.jpg" alt="watch">
+                <div class="resinfo">
+                    <div class="name">
+                        <h4>Street Stay</h4>
+                        <div class="rating">3.8⭐</div>
+                    </div>
+                    <div class="dishAvailable">
+                        <div class="dish">Street Food Special</div>
+                        <div class="price">80.00 Rs for one</div>
+                    </div>
+                    <div class="distance">29min</div>
+                </div>
+                </a>
+            </div>
+            <div class="content">
+                <a href="decoflow.html">
+                <img src="Images/dal_makhni.jpg" alt="watch">
+                <div class="resinfo">
+                    <div class="name">
+                        <h4>Street Stay</h4>
+                        <div class="rating">3.8⭐</div>
+                    </div>
+                    <div class="dishAvailable">
+                        <div class="dish">Street Food Special</div>
+                        <div class="price">80.00 Rs for one</div>
+                    </div>
+                    <div class="distance">29min</div>
+                </div>
+                </a>
+            </div>
+            <div class="content">
+                <a href="decoflow.html">
+                <img src="Images/china_bhel.jpg" alt="watch">
+                <div class="resinfo">
+                    <div class="name">
+                        <h4>Street Stay</h4>
+                        <div class="rating">3.8⭐</div>
+                    </div>
+                    <div class="dishAvailable">
+                        <div class="dish">Street Food Special</div>
+                        <div class="price">80.00 Rs for one</div>
+                    </div>
+                    <div class="distance">29min</div>
+                </div>
+                </a>
+            </div>
+            <div class="content">
+                <a href="decoflow.html">
+                <img src="Images/appe.jpg" alt="watch">
+                <div class="resinfo">
+                    <div class="name">
+                        <h4>Street Stay</h4>
+                        <div class="rating">3.8⭐</div>
+                    </div>
+                    <div class="dishAvailable">
+                        <div class="dish">Street Food Special</div>
+                        <div class="price">80.00 Rs for one</div>
+                    </div>
+                    <div class="distance">29min</div>
+                </div>
+                </a>
+            </div>
+            <div class="content">
+                <a href="decoflow.html">
+                <img src="Images/pulav.jpg" alt="watch">
+                <div class="resinfo">
+                    <div class="name">
+                        <h4>Street Stay</h4>
+                        <div class="rating">3.8⭐</div>
+                    </div>
+                    <div class="dishAvailable">
+                        <div class="dish">Street Food Special</div>
+                        <div class="price">80.00 Rs for one</div>
+                    </div>
+                    <div class="distance">29min</div>
+                </div>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="local">
+        <h1>Popular localities in and around Aurangabad</h1>
+        <div class="places_India">
+            <div class="place">Place <div class="arrow">></div></div>
+            <div class="place">Place<div class="arrow">></div></div>
+            <div class="place">Place<div class="arrow">></div></div>
+            <div class="place">Place<div class="arrow">></div></div>
+            <div class="place">Place<div class="arrow">></div></div>
+            <div class="place">Place<div class="arrow">></div></div>
+            <div class="place">Place<div class="arrow">></div></div>
+            <div class="place">Place<div class="arrow">></div></div>
+            <div class="place">Place<div class="arrow">></div></div>
+            <div class="place">Place<div class="arrow">></div></div>
+            <div class="place">Place<div class="arrow">></div></div>
+            <div class="place">Place<div class="arrow">></div></div>
+            <div class="place">Place<div class="arrow">></div></div>
+        </div>
+    </div>
+
+    <div class="explore">
+        <div class="options">
+            <h3>Explore Options near me</h3>
+            <ul>
+                <li><select name="" id="">
+                    <option value="">Popular Cuisines near me</option>
+                    <option value="">
+                        <ul>
+                            <li> Bakery food near me</li>
+                            <li>Biryani food near me</li>
+                            <li>Chinese food near me</li>
+                            <li>Burger food near me</li>
+                            <li>Desserts food near me</li>
+                            <li> Beverages food near me</li>
+                            <li>Ice Cream food near me</li>
+                        </ul>
+                     </option>
+                </select></li>
+                <li><select name="" id="">
+                    <option value="">Popular Restaurants near me</option>
+                    <option value="">
+                        <ul>
+                            <li>Bakery near me</li>
+                            <li>Dhabas near me</li>
+                            <li>Cafes near me</li>
+                            <li>Beverages shop near me</li>
+                            <li>Dinning near me</li>
+                            <li>Sweet Shop near me</li>
+                        </ul>
+                    </option>
+                </select></li>
+                <li><select name="" id="">
+                    <option value="">Cities We Deliver To</option>
+                    <option value="">
+                        <ul>
+                            <li>Bengaluru</li>
+                            <li>Pune</li>
+                            <li>Kerala</li>
+                            <li>Nashik</li>
+                            <li>Hydrabad</li>
+                            <li>Manali</li>
+                            <li>Delhi</li>
+                            <li>NAnded</li>
+                            <li>Aurangbad</li>
+                            <li>Mumbai</li>
+                        </ul>
+                    </option>
+                </select></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <footer class="zomato_footer">
+        <div class="footer_container">
+            <div class="logo_select">
+                <h2>ZOMATO</h2>
+                <div class="select2">
+                    <select name="Country" id="country">
+                        <option value="India">India</option>
+                        <option value="">USA</option>
+                        <option value="">Canada</option>
+                        <option value="">Shri Lanka</option>
+                        <option value="">Singapore</option>
+                        <option value="">Australia</option>
+                        <option value="">Brazil</option>
+                        <option value="">Poland</option>
+                        <option value="">UAE</option>
+                        <option value="">Italy</option>
+                        <option value="">New Zealand</option>
+                        <option value="">Indonesia</option>
+                        <option value="">Portugal</option>
+                        <option value="">United Kingdom</option>
+                        <option value="">South Africa</option>
+                        <option value="">Chile</option>
+                        <option value="">Ireland</option>
+                    </select>
+                    <select name="Language" id="Language">
+                        <option value="">English</option>
+                        <option value="">Hindi</option>
+                        <option value="">Portugues</option>
+                        <option value="">Indonesian</option>
+                        <option value="">Italian</option>
+                        <option value="">English</option>
+                        <option value="">Polish</option>
+                        <option value="">English US</option>
+                        <option value="">Marathi</option>
+                        <option value="">Geraman</option>
+                        <option value="">Spanish</option>
+                        <option value="">French</option>
+                    </select>
+                </div>
+                
+            </div>
+            
+
+            <div class="footer_row">
+                <div class="footer_column">
+                    <h6>ABOUT ZOMATO</h6>
+                    <ul>
+                        <li><a href="">Who We Are</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Work With Us</a></li>
+                        <li><a href="">Investor Relations</a></li>
+                        <li><a href="">Report Fraud</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <h6>ZOMAVERSE</h6>
+                    <ul>
+                        <li><a href="">Zomato</a></li>
+                        <li><a href="">Blinkit</a></li>
+                        <li><a href="">Feeding India</a></li>
+                        <li><a href="">Hyperpure</a></li>
+                        <li><a href="">Zomaland</a></li>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <h6>FOR RESTAURANTS</h6>
+                    <ul>
+                        <li><a href="">Partner With Us</a></li>
+                        <li><a href="">Apps For You</a></li>
+                    </ul>
+                    <h6>FOR ENTERPRISES</h6>
+                    <ul>
+                        <li><a href="">Zomato For Enterprise</a></li>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <h6>LEARN MORE</h6>
+                    <ul>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Security</a></li>
+                        <li><a href="">Terms</a></li>
+                        <li><a href=" ">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <h6>SOCIAL LINKS</h6>
+                    <ul>
+                        <li>
+                            <div class="social">
+                                <ul class="social_link">
+                                    <li><a href=""><img src="Images/linkedin-svgrepo-com.svg" alt=""></a></li>
+                                    <li><a href=""><img src="Images/instagram-1-svgrepo-com.svg" alt=""></a></li>
+                                    <li><a href=""><img src="Images/pinterest-1-logo-svgrepo-com.svg" alt=""></a></li>
+                                    <li><a href=" "><img src="Images/whatsapp-svgrepo-com.svg" alt=""></a></li>
+                                </ul>
+                            </div>
+                            
+                        </li>
+                        <li><a href="">
+                            <div class="store_add img1">
+                                <img src="Images/app_store.png" alt="">
+                                <!-- <div class="store_icon"><img src="Images/icons8-apple-50.png" alt=""></div>
+                                <div class="store_name">
+                                    <h6>Download on the</h6>
+                                    <h2>App Store</h2>
+                                </div> -->
+                            </div>
+                        </a></li>
+                        <li><a href="">
+                            <div class="store_add img2">
+                                <img src="Images/play_store.png" alt="">
+                                <!-- <div class="store_icon"><img src="Images/icons8-play-store-48.png" alt=""></div>
+                                <div class="store_name">
+                                  <p>Get it On</p>
+                                  <h6>Google Play</h6>
+                                </div> -->
+                            </div>
+                        </a></li>
+                    </ul>
+                </div>        
+            </div>
+            <br><hr>
+            <div class="cookies">
+                <!-- <div class="p1"><p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-</p></div>
+                <div class="p2"><p>2023 © Zomato™ Ltd. All rights reserved.</p></div> -->
+                <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-</p>
+                <p>2023 © Zomato™ Ltd. All rights reserved.</p>
+            </div>
+        </div>
+
+    </footer> 
+
+
+    <script>
+        myButton.addEventListener("click", function () {
+            myPopup.classList.add("show");
+        });
+        closePopup.addEventListener("click", function () {
+            myPopup.classList.remove("show");
+        });
+        window.addEventListener("click", function (event) {
+            if (event.target == myPopup) {
+                myPopup.classList.remove("show");
+            }
+        });
+        myButton1.addEventListener("click", function () {
+            myPopup1.classList.add("show");
+        });
+        closePopup1.addEventListener("click", function () {
+            myPopup1.classList.remove("show");
+        });
+        window.addEventListener("click", function (event) {
+            if (event.target == myPopup1) {
+                myPopup1.classList.remove("show");
+            }
+        });
+
+        function clickme() {
+            alert("Successful!!!")
+            
+        }
+    </script>
+    
+</body>
+</html>

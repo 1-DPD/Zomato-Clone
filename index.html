@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="zomatoicon.png">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Js/zomato.js"></script>
+    <title>Zomato</title>
+</head>
+<body>
+    <header>
+       
+        <div class="navbar" >
+            <div class="add">
+                <button id="add">Add a Restaurant</button>
+            </div>
+            <div class="singin" >
+                <button id="myButton">Signup</button>
+                <div id="myPopup" class="popup">
+                    <div class="popup-content">
+                        <div class="close">
+                            <h1 style="color:rgb(133, 134, 133);">Signin</h1>
+                            <button id="closePopup">X</button>
+                        </div>
+                        
+                        <div class="input">
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email" attern=".+@globex\.com"  required>
+                            <div class="click">
+                                <button onclick="clickme()">Submit</button>
+                            </div> 
+                        </div>
+                        <div class="or"><p>-or-</p></div>
+                        
+                        <div class="with">Continue With Google</div>
+                        <p>Already have an account? <a href="#" class="signIn-link">Login</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="blank"></div>
+            <div class="singin">
+                <button id="myButton1">Login</button>
+                <div id="myPopup1" class="popup">
+                    <div class="popup-content">
+                        <div class="close">
+                            <h1 style="color:rgb(133, 134, 133);">Login</h1>
+                            <button id="closePopup1">X</button>
+                        </div>
+                        <div class="select">
+                            <select name="" id="">
+                                <option value="">India | +91</option>
+                                <option value="">USA   | +1 </option>  
+                             
+
+                            </select>
+                            <input type="number"   maxlength="10" pattern="[1-9]{1}[9-0]{9} \d{10}" required>
+                            <div class="click">
+                                <button onclick="clickme()">Submit</button>
+                            </div>
+
+                        </div>
+                        
+                        <div class="or"><p>-or-</p></div>
+                        <div class="with_cont">
+                            <div class="with">Continue With Email</div>
+                            <div class="with">Continue With Google</div>
+                        </div>
+                        <p>Create an account? <a href="#" class="signIn-link">Login</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="blank"></div>
+            
+
+        </div>
+        
+        <div class="nav">
+            
+            <!-- <img src="Images/zomato_blackbackground.jfif" alt=""> -->
+            
+        </div>
+        <div class="image_back"></div>
+        <div class="logo_info">
+            <!-- <h4>ZOMATO</h4> -->
+            <img src="Images/8313a97515fcb0447d2d77c276532a511583262271.png" alt="">
+            <p>Find the best restaurants, cafés</p> 
+            <p>and bars in India</p>
+        </div>
+        
+        <div class="back_img">
+            <img src="Images/Toronto_Food_Photographer_Joanna_Wojewoda_Alchemy_Food_and_Drink-2.jpg" alt="">
+        </div>
+
+    </header>
+
+
+    <section>
+        <div class="place_info">
+            <h5>Popular locations in India</h5>
+            <p>From swanky upscale restaurants to the cosiest hidden gems serving the most incredible food,  </p>  
+            <p>Zomato covers it all.Explore menus, and millions of restaurant photos and reviews from users </p>
+            <p>just like you, to find your next great meal.</p>
+        </div>
+        <div class="places_India">
+            <a href="zomato.html"><div class="place">Agra Restaurants <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Ahemdabad Restaurants  <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Ajmer Restaurants  <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Amritsar Restaurants  <div class="arrow">></div></div></a>
+            <a href="zomato.html"><div class="place">Bengaluru Restaurants  <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Bhopal Restaurants  <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Bhuvaneshwar Restaurants  <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Bhuj Restaurants  <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Chandighar Restaurants  <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Chennai Restaurants  <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Delhi Restaurants  <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Dharmshala Restaurants  <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Goa Restaurants  <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Guwahati Restaurants  <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Haridwar Restaurants  <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Hyderabad Restaurants  <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Indore Restaurants  <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Igatpuri Restaurants  <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Jammu Restaurants  <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Jaipur Restaurants  <div class="arrow">></div></div></a>
+            <!-- <a href=""><div class="place">Kolhapur Restaurants <div></a>
+            <a href=""><div class="place">Kanpur Restaurants </div></a>
+            <a href=""><div class="place">Kota Restaurants </div></a>
+            <a href=""><div class="place">Kolkata Restaurants </div></a>
+            <a href=""><div class="place">Lucknow Restaurants </div></a>
+            <a href=""><div class="place">Ludhiana Restaurants </div></a>
+            <a href=""><div class="place">Mumbai Restaurants </div></a>
+            <a href=""><div class="place">Mysore Restaurants </div></a>
+            <a href=""><div class="place">Nagpur Restaurants </div></a>
+            <a href=""><div class="place">Nanded Restaurants </div></a>
+            <a href=""><div class="place">Pune Restaurants </div></a>
+            <a href=""><div class="place">Ranchi Restaurants </div></a>
+            <a href=""><div class="place">Shrinagar Restaurants </div></a>
+            <a href=""><div class="place">Tirupati Restaurants </div></a>
+            <a href=""><div class="place">Udaypur Restaurants </div></a>
+            <a href=""><div class="place">Vellore Restaurants </div></a>
+            <a href=""><div class="place">Vishakapatanam Restaurants </div></a>       -->
+        </div>
+
+        <h1>ALL COUNTRIES</h1>
+        <div class="country">
+            <a href=""><div class="place">India <div class="arrow">></div></div></a>
+            <a href=""><div class="place">USA <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Canada <div class="arrow">></div></div></a>
+            <a href=""><div class="place">UK <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Indonesia <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Australia <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Brazil <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Ireland <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Singapore <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Italy <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Poland <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Portugal <div class="arrow">></div></div></a>
+            <a href=""><div class="place">UAE <div class="arrow">></div></div></a>
+            <a href=""><div class="place">South Africa<div class="arrow">></div></div></a>
+            <a href=""><div class="place">Geramany<div class="arrow">></div></div></a>
+            <a href=""><div class="place">Shri Lanka <div class="arrow">></div></div></a>
+            <a href=""><div class="place">New Zealand <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Chile <div class="arrow">></div></div></a>
+            <a href=""><div class="place">Qatar <div class="arrow">></div></div></a>
+        </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer class="zomato_footer">
+        <div class="footer_container">
+            <div class="logo_select">
+                <h2>ZOMATO</h2>
+                <div class="select2">
+                    <select name="Country" id="country">
+                        <option value="India">India</option>
+                        <option value="">USA</option>
+                        <option value="">Canada</option>
+                        <option value="">Shri Lanka</option>
+                        <option value="">Singapore</option>
+                        <option value="">Australia</option>
+                        <option value="">Brazil</option>
+                        <option value="">Poland</option>
+                        <option value="">UAE</option>
+                        <option value="">Italy</option>
+                        <option value="">New Zealand</option>
+                        <option value="">Indonesia</option>
+                        <option value="">Portugal</option>
+                        <option value="">United Kingdom</option>
+                        <option value="">South Africa</option>
+                        <option value="">Chile</option>
+                        <option value="">Ireland</option>
+                    </select>
+                    <select name="Language" id="Language">
+                        <option value="">English</option>
+                        <option value="">Hindi</option>
+                        <option value="">Portugues</option>
+                        <option value="">Indonesian</option>
+                        <option value="">Italian</option>
+                        <option value="">English</option>
+                        <option value="">Polish</option>
+                        <option value="">English US</option>
+                        <option value="">Marathi</option>
+                        <option value="">Geraman</option>
+                        <option value="">Spanish</option>
+                        <option value="">French</option>
+                    </select>
+                </div>
+                
+            </div>
+            
+
+            <div class="footer_row">
+                <div class="footer_column">
+                    <h6>ABOUT ZOMATO</h6>
+                    <ul>
+                        <li><a href="">Who We Are</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Work With Us</a></li>
+                        <li><a href="">Investor Relations</a></li>
+                        <li><a href="">Report Fraud</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <h6>ZOMAVERSE</h6>
+                    <ul>
+                        <li><a href="">Zomato</a></li>
+                        <li><a href="">Blinkit</a></li>
+                        <li><a href="">Feeding India</a></li>
+                        <li><a href="">Hyperpure</a></li>
+                        <li><a href="">Zomaland</a></li>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <h6>FOR RESTAURANTS</h6>
+                    <ul>
+                        <li><a href="">Partner With Us</a></li>
+                        <li><a href="">Apps For You</a></li>
+                    </ul>
+                    <h6>FOR ENTERPRISES</h6>
+                    <ul>
+                        <li><a href="">Zomato For Enterprise</a></li>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <h6>LEARN MORE</h6>
+                    <ul>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Security</a></li>
+                        <li><a href="">Terms</a></li>
+                        <li><a href=" ">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <h6>SOCIAL LINKS</h6>
+                    <ul>
+                        <li>
+                            <div class="social">
+                                <ul class="social_link">
+                                    <li><a href=""><img src="Images/linkedin-svgrepo-com.svg" alt=""></a></li>
+                                    <li><a href=""><img src="Images/instagram-1-svgrepo-com.svg" alt=""></a></li>
+                                    <li><a href=""><img src="Images/pinterest-1-logo-svgrepo-com.svg" alt=""></a></li>
+                                    <li><a href=" "><img src="Images/whatsapp-svgrepo-com.svg" alt=""></a></li>
+                                </ul>
+                            </div>
+                            
+                        </li>
+                        <li><a href="">
+                            <div class="store_add img1">
+                                <img src="Images/app_store.png" alt="">
+                                <!-- <div class="store_icon"><img src="Images/icons8-apple-50.png" alt=""></div>
+                                <div class="store_name">
+                                    <h6>Download on the</h6>
+                                    <h2>App Store</h2>
+                                </div> -->
+                            </div>
+                        </a></li>
+                        <li><a href="">
+                            <div class="store_add img2">
+                                <img src="Images/play_store.png" alt="">
+                                <!-- <div class="store_icon"><img src="Images/icons8-play-store-48.png" alt=""></div>
+                                <div class="store_name">
+                                  <p>Get it On</p>
+                                  <h6>Google Play</h6>
+                                </div> -->
+                            </div>
+                        </a></li>
+                    </ul>
+                </div>        
+            </div>
+            <br><hr>
+            <div class="cookies">
+                <!-- <div class="p1"><p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-</p></div>
+                <div class="p2"><p>2023 © Zomato™ Ltd. All rights reserved.</p></div> -->
+                <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-</p>
+                <p>2023 © Zomato™ Ltd. All rights reserved.</p>
+            </div>
+        </div>
+
+    </footer> 
+
+
+
+    <script>
+        myButton.addEventListener("click", function () {
+            myPopup.classList.add("show");
+        });
+        closePopup.addEventListener("click", function () {
+            myPopup.classList.remove("show");
+        });
+        window.addEventListener("click", function (event) {
+            if (event.target == myPopup) {
+                myPopup.classList.remove("show");
+            }
+        });
+        myButton1.addEventListener("click", function () {
+            myPopup1.classList.add("show");
+        });
+        closePopup1.addEventListener("click", function () {
+            myPopup1.classList.remove("show");
+        });
+        window.addEventListener("click", function (event) {
+            if (event.target == myPopup1) {
+                myPopup1.classList.remove("show");
+            }
+        });
+
+        function clickme() {
+            alert("Successful!!!")
+            
+        }
+
+        
+  
+    </script>
+    
+    
+ 
+    
+    
+
+</body>
+</html>
